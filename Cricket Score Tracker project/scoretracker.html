@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Score Tracker</title>
+	<link rel="stylesheet" type="text/css" href="Assets/css/scoretracker.css">
+	<script type="text/javascript" src="Assets/js/lib/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+	<div id="container">
+		<h1>Score Tracker</h1>
+		<div id="battingScore">
+			<h3>Team 1</h3>
+			<h3 id="teamscore"><span id="battingteamruns">0</span>/<span id="battingteamwickets">0</span></h3>
+			<ul id="batsmanplaying">
+				<li>Batsman <span class="batsmenruns" id="batsmenrunsheading">R</span> <span class="batsmenballs" id="batsmenballsheading">B</span> <span class="four" id="batsmenfoursheading">4s</span> <span class="six" id="batsmensixheading">6s</span></li>
+				<li id="batsmen1score" class="striker"><span class="batsmenname">Batsmen1</span> <span class="strikerdisplay1">*</span> <span class="batsmenruns" id="batsmen1runs">0</span> <span class="batsmenballs" id="batsmen1balls">0</span> <span class="four" id="batsmen1fours">0</span> <span class="six" id="batsmen1six">0</span></li>
+				<li id="batsmen2score"><span class="batsmenname">Batsmen2</span> <span class="strikerdisplay2 strikerotate">*</span> <span class="batsmenruns" id="batsmen2runs">0</span> <span class="batsmenballs" id="batsmen2balls">0</span> <span class="four" id="batsmen2fours">0</span> <span class="six" id="batsmen2six">0</span></li>
+			</ul>
+		</div>
+        <div id="bowlers">
+        	<h3>Bowler</h3>
+        	<ul>
+        		<li>Bowler <span class="bowlerovers">O</span> <span class="bowlermaidens">M</span>
+        	     <span class="bowlerruns">R</span> <span class="bowlerwickets">W</span></li>
+        		<li>Bowler1 <span class="bowlerovers">0</span> <span class="bowlermaidens">0</span>
+        	     <span class="bowlerruns">0</span> <span class="bowlerwickets">0</span></li>
+        	</ul>
+
+        </div>
+    </div>
+    <div id="deliveryresult">
+    	<button id="dotball" class="runsperdelivery" name="runsperdelivery" onclick="updatescore(event)" value="0">0</button>
+    	<button id="onerun" class="runsperdelivery" name="runsperdelivery" onclick="updatescore(event)" value="1">1</button>
+    	<button id="tworuns" class="runsperdelivery" name="runsperdelivery" onclick="updatescore(event)" value="2">2</button>
+    	<button id="threeruns" class="runsperdelivery" name="runsperdelivery" onclick="updatescore(event)" value="3">3</button>
+    	<button id="fourruns" class="runsperdelivery" name="runsperdelivery" onclick="updatescore(event)" value="4">4</button>
+    	<button id="fiveruns" class="runsperdelivery"  name="runsperdelivery" onclick="updatescore(event)" value="5">5</button>
+    	<button id="sixruns" class="runsperdelivery" name="runsperdelivery" onclick="updatescore(event)" value="6">6</button>
+    	<button id="wide" class="runsperdelivery" name="runsperdelivery" onclick="updatescore(event)" value="1">WIDE</button>
+    	<button id="noball" class="runsperdelivery" name="runsperdelivery" onclick="updatescore(event)" value="1">NO-BALL</button>
+    	<button id="bye" class="runsperdelivery" name="runsperdelivery" onclick="updatescore(event)" value="1">BYE</button>
+    	<button id="legbye" class="runsperdelivery" name="runsperdelivery" onclick="updatescore(event)" value="1">LEG BYE</button>
+    	<hr>
+    	<button id="bowled"  class="out" onclick="updatescore(event)" name="out">BOWLED</button>
+    	<button id="caught"  class="out" onclick="updatescore(event)" name="out">CAUGHT</button>
+    	<button id="stumped" class="out" onclick="updatescore(event)"  name="out">STUMPED</button>
+    	<button id="runout"  class="out" onclick="updatescore(event)" name="out">RUN OUT</button>
+    	<button id="retirehurt"  class="out" onclick="updatescore(event)" name="out">RETIRE HURT</button>
+    </div>
+    <script type="text/javascript" src="Assets/js/scoretracker.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+body{
+	font-family: Roboto;
+	background: #8360c3;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	background: #fff;
+	height: 40px;
+	line-height: 40px;
+	color: #666;
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+li:nth-child(2n){
+	background: #f7f7f7;
+}
+
+#batsmenrunsheading{
+	margin-left: 413px;
+}
+#batsmenballsheading{
+	margin-left: 40px;
+}
+#batsmenfoursheading{
+	margin-left: 40px;
+}
+#batsmensixheading{
+	margin-left: 40px;
+}
+
+#batsmen1runs{
+	margin-left: 406px;
+}
+#batsmen1balls{
+	margin-left: 43px;
+}
+#batsmen1fours{
+	margin-left: 44px;
+}
+#batsmen1six{
+	margin-left: 45px;
+}
+
+#batsmen2runs{
+	margin-left: 406px;
+}
+#batsmen2balls{
+	margin-left: 43px;
+}
+#batsmen2fours{
+	margin-left: 44px;
+}
+#batsmen2six{
+	margin-left: 45px;
+}
+
+.strikerdisplay1{
+	color: red;
+	font-weight: 900;
+}
+
+.strikerdisplay2{
+	color: red;
+	font-weight: 900;
+}
+
+.strikerotate{
+	color: white !important;
+}
+
+#deliveryresult{
+	margin-top: 30px;
+	margin-left: 40px;
+	margin-bottom: 40px;
+}
+
+.runsperdelivery{
+	margin-left: 40px;
+	margin-bottom: 30px;
+	background: green;
+	color: white;
+}
+
+.out{
+	margin-top: 40px;
+	margin-left: 40px;
+	background: red;
+	color: white;
+}
